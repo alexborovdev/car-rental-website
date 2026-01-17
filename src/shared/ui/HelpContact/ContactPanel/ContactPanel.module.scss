@@ -5,10 +5,7 @@
   display: flex;
   flex-direction: column;
   white-space: nowrap;
-
-  @include hover {
-    color: var(--hover-color-2);
-  }
+  z-index: 1000;
 
   @include tablet {
     position: absolute !important;

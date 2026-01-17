@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MEDIA_QUERIES, useMediaQuery } from '@/shared/lib/hooks/useMediaQuery'
-import LogoIcon from '@/shared/icons/logo.svg?react'
-import LogoIconPartial from '@/shared/icons/logo-partial.svg?react'
+import LogoIcon from '@/shared/assets/icons/logo.svg?react'
+import LogoIconPartial from '@/shared/assets/icons/logo-partial.svg?react'
 import styles from './Logo.module.scss'
 
 const Logo = () => {

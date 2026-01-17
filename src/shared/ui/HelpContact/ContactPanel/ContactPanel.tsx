@@ -2,10 +2,14 @@ import styles from './ContactPanel.module.scss'
 
 type Props = {
   isOpen: boolean
+  isTablet: boolean
 }
 
 const ContactPanel = (props: Props) => {
-  const { isOpen } = props
+  const {
+    isOpen,
+    isTablet
+  } = props
 
   return (
     <a
@@ -16,7 +20,7 @@ const ContactPanel = (props: Props) => {
       aria-label="Call us for help at +9999999999"
       data-open={isOpen}
       role="dialog"
-      tabIndex={isOpen ? 0 : -1}
+      tabIndex={isTablet || isOpen ? 0 : -1}
     >
         <span className={styles.text}>
             <span className={styles.label}>Need help?</span>

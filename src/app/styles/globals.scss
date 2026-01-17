@@ -9,15 +9,15 @@ body {
   font-weight: 400;
 }
 
-section {
-  &:not(:first-child) {
-    padding-top: fluid(100, 70);
-  }
-
-  &:last-child {
-    padding-bottom: fluid(100, 70);
-  }
-}
+//section {
+//  &:not(:first-child) {
+//    padding-top: fluid(100, 70);
+//  }
+//
+//  &:last-child {
+//    padding-bottom: fluid(100, 70);
+//  }
+//}
 
 h1,
 h2,
@@ -31,19 +31,15 @@ h6 {
 }
 
 h1 {
-  @include fluid-text(60, 48);
+  @include fluid-text(60, 42);
 }
 
 h2 {
-  @include fluid-text(48, 40);
+  @include fluid-text(50, 34);
 }
 
 h3 {
-  @include fluid-text(40, 32);
-}
-
-h4 {
-  @include fluid-text(32, 26);
+  @include fluid-text(24, 18);
 }
 
 p {
@@ -68,8 +64,16 @@ button {
   background-color: transparent;
   border: none;
 
-  @include hover {
-    color: var(--hover-color);
+  &:disabled,
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):not(.disabled) {
+    @include hover {
+      color: var(--hover-color);
+    }
   }
 }
 

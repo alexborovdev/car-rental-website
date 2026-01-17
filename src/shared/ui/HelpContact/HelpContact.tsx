@@ -1,4 +1,5 @@
 import { useHelpContactOutsideClick } from '@/shared/ui/HelpContact'
+import { MEDIA_QUERIES, useMediaQuery } from '@/shared/lib/hooks/useMediaQuery'
 import ToggleButton from '@/shared/ui/HelpContact/ToggleButton'
 import ContactPanel from '@/shared/ui/HelpContact/ContactPanel'
 import styles from './HelpContact.module.scss'
@@ -10,6 +11,8 @@ const HelpContact = () => {
     toggle,
   } = useHelpContactOutsideClick()
 
+  const isTablet = useMediaQuery(MEDIA_QUERIES.tablet)
+
   return (
     <address
       ref={ref}
@@ -17,9 +20,13 @@ const HelpContact = () => {
     >
       <ToggleButton
         isOpen={isOpen}
+        isTablet={isTablet}
         onClick={toggle}
       />
-      <ContactPanel isOpen={isOpen} />
+      <ContactPanel
+        isOpen={isOpen}
+        isTablet={isTablet}
+      />
     </address>
   )
 }

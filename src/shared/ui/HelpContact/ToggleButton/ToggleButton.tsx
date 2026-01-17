@@ -1,14 +1,16 @@
-import PhoneIcon from '@/shared/icons/phone.svg?react'
+import PhoneIcon from '@/shared/assets/icons/phone.svg?react'
 import styles from './ToggleButton.module.scss'
 
 type Props = {
   isOpen: boolean
+  isTablet: boolean
   onClick: () => void
 }
 
 const ToggleButton = (props: Props) => {
   const {
     isOpen,
+    isTablet,
     onClick
   } = props
 
@@ -20,6 +22,7 @@ const ToggleButton = (props: Props) => {
       aria-label={isOpen ? 'Close contact panel' : 'Open contact panel'}
       aria-controls="help-contact-panel"
       onClick={onClick}
+      tabIndex={!isTablet ? 0 : -1}
     >
       <PhoneIcon aria-hidden="true" />
     </button>

@@ -11,8 +11,10 @@
   --color-accent: #5937E0;
   --color-accent-2: #FF9E0C;
 
-  --hover-color: #5937E0;
-  --hover-color-2: #FF9E0C;
+  --hover-color: var(--color-accent);
+  --hover-color-2: var(--color-accent-2);
+  --accent-hover-color: #3f1dc5;
+  --accent-hover-color-2: #dc8506;
 
   --error-color: red;
 

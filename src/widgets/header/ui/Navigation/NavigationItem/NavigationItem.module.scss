@@ -4,11 +4,8 @@
   font-size: fluid(18, 16);
   font-weight: 400;
 
-  @include hover {
-    color: var(--hover-color-2);
-  }
-
   &[aria-current='page'] {
     font-weight: 600;
+    color: var(--color-accent);
   }
 }

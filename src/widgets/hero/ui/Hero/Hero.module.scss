@@ -1,0 +1,16 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-image: url('@/shared/assets/images/backgrounds/tire-track.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}

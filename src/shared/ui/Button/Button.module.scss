@@ -1,0 +1,28 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.button {
+  border-radius: var(--border-radius-small);
+  padding: rem(11) rem(28);
+}
+
+.yellow {
+  background-color: var(--color-accent-2);
+
+  &:not(:disabled):not(:global(.disabled)) {
+    @include hover {
+      background-color: var(--accent-hover-color-2);
+      color: inherit;
+    }
+  }
+}
+
+.blue {
+  background-color: var(--color-accent);
+
+  &:not(:disabled):not(:global(.disabled)) {
+    @include hover {
+      background-color: var(--accent-hover-color);
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: fluid(35, 25);
+  z-index: 100;
+}
+
+.title {
+  line-height: 1.1;
+}
+
+.description {
+  max-width: rem(470);
+}

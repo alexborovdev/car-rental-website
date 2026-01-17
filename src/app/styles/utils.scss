@@ -28,6 +28,12 @@
   }
 }
 
-.accented {
-  color: var(--color-accent);
+.surface {
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+  padding: fluid(75, 50);
+
+  & * {
+    color: var(--text-color-light);
+  }
 }

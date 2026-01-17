@@ -1,7 +1,9 @@
+import Hero from '@/widgets/hero'
+
 const HomePage = () => {
   return (
     <main>
-      Home Page
+      <Hero />
     </main>
   )
 }

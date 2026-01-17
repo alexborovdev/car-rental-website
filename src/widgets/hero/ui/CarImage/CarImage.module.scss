@@ -1,0 +1,18 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.image {
+  opacity: 0.9;
+  user-select: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 700px;
+  height: auto;
+  max-width: 80%;
+  transform: translate(-50%, -35%);
+  z-index: 0;
+
+  @include mobile {
+    display: none;
+  }
+}
