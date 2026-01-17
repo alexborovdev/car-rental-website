@@ -1,0 +1,11 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(20, 15);
+
+  & button {
+    margin-top: fluid(30, 20);
+  }
+}

@@ -4,13 +4,16 @@
   position: relative;
   display: grid;
   grid-template-columns: 60% 40%;
+  align-items: center;
+  justify-items: end;
   background-image: url('@/shared/assets/images/backgrounds/tire-track.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @include mobile {
+  @include tablet {
     display: flex;
     flex-direction: column;
+    row-gap: fluid(50, 40);
   }
 }

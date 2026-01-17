@@ -13,7 +13,10 @@ const Intro = () => {
         Choose from a wide range of modern vehicles for every journey.
         Flexible rental terms, transparent pricing, and comfort you can rely on
       </p>
-      <Button to="/vehicles">
+      <Button
+        label="Go to Vehicles page"
+        to="/vehicles"
+      >
         View all cars
       </Button>
     </div>

@@ -8,11 +8,11 @@
   top: 50%;
   width: 700px;
   height: auto;
-  max-width: 80%;
-  transform: translate(-50%, -35%);
+  max-width: 60%;
+  transform: translate(-25%, -25%);
   z-index: 0;
 
-  @include mobile {
+  @include tablet {
     display: none;
   }
 }

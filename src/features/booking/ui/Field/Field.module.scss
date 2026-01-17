@@ -1,0 +1,21 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  @include visually-hidden
+}
+
+.select,
+.input {
+  color: var(--text-color-dark);
+  height: rem(40);
+  padding: 0 rem(15);
+  background-color: var(--bg-color-2);
+  border: var(--border);
+  border-color: transparent;
+  border-radius: var(--border-radius-small);
+}

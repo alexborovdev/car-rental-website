@@ -1,0 +1,24 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(40, 30);
+  width: fluid(420, 300);
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--box-shadow);
+  z-index: 100;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.title {
+  color: var(--text-color-dark);
+  font-size: fluid(28, 22);
+  font-weight: 600;
+  text-align: center;
+}
