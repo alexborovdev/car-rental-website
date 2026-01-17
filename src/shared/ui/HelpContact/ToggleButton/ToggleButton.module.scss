@@ -1,0 +1,10 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.toggle {
+  @include tablet-above {
+    pointer-events: none;
+  }
+
+  display: flex;
+  align-items: center;
+}

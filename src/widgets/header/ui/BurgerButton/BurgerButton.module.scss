@@ -1,0 +1,17 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.burger {
+  padding: rem(10);
+
+  @include mobile-above {
+    display: none;
+  }
+
+  & span {
+    display: block;
+    width: rem(30);
+    height: rem(3);
+    background: currentColor;
+    margin: rem(7) 0;
+  }
+}

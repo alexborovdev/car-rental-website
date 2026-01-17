@@ -1,0 +1,19 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.logo {
+  @include mobile {
+    margin-right: auto;
+  }
+  
+  & [fill] {
+    fill: currentColor;
+  }
+
+  & [stroke] {
+    stroke: currentColor;
+  }
+
+  & svg * {
+    transition-property: fill, stroke;
+  }
+}

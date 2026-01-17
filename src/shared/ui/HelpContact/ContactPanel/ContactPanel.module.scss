@@ -1,0 +1,41 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+
+  @include hover {
+    color: var(--hover-color-2);
+  }
+
+  @include tablet {
+    position: absolute !important;
+    top: calc(100% + #{rem(5)});
+    right: 0;
+    background-color: var(--bg-color);
+    padding: rem(10);
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--box-shadow);
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: var(--transition-duration);
+
+    &[data-open='true'] {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 400;
+}

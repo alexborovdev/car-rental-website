@@ -1,4 +1,4 @@
-@use '@/shared/tools/scss' as *;
+@use '@/shared/lib/tools/scss' as *;
 
 *,
 ::before,
@@ -85,17 +85,17 @@ label {
   cursor: pointer;
 }
 
-[fill] {
-  fill: currentColor;
-}
+//[fill] {
+//  fill: currentColor;
+//}
+//
+//[stroke] {
+//  stroke: currentColor;
+//}
 
-[stroke] {
-  stroke: currentColor;
-}
-
-svg * {
-  transition-property: fill, stroke;
-}
+//svg * {
+//  transition-property: fill, stroke;
+//}
 
 @media (prefers-reduced-motion: reduce) {
   *,

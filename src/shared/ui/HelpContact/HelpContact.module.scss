@@ -1,0 +1,14 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.helpContact {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: fluid(15, 10);
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

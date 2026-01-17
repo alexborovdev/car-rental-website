@@ -1,0 +1,9 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: fluid(25, 15);
+  padding: fluid(30, 25);
+}

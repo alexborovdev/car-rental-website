@@ -1,0 +1,15 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.navigation {
+  position: relative;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  column-gap: fluid(50, 30);
+
+  @include mobile {
+    display: none;
+  }
+}

@@ -1,22 +1,32 @@
-@use '@/shared/tools/scss' as *;
+@use '@/shared/lib/tools/scss' as *;
 
 :root {
   --bg-color: #FFFFFF;
+  --bg-color-2: #FAFAFA;
 
-  --color-accent: red;
+  --text-color-light: #FFFFFF;
+  --text-color-grey: #8A8A8A;
+  --text-color-dark: #000000;
 
-  --hover-color: red;
+  --color-accent: #5937E0;
+  --color-accent-2: #FF9E0C;
+
+  --hover-color: #5937E0;
+  --hover-color-2: #FF9E0C;
 
   --error-color: red;
 
-  --text-color-light: #FFFFFF;
-  --text-color-dark: #000000;
-
   --transition-duration: 0.2s;
 
-  --border-radius: #{fluid(25, 15)};
   --border: #{rem(1)} solid black;
+  --border-radius: #{fluid(35, 25)};
+  --border-radius-small: #{fluid(12.5, 10)};
 
-  --container-width: #{rem(1440)};
-  --container-padding-x: #{fluid(100, 30)};
+  --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  --container-big-width: #{rem(1440)};
+  --container-big-padding-x: #{fluid(100, 30)};
+
+  --container-small-width: #{rem(1200)};
+  --container-small-padding-x: #{fluid(70, 22.5)};
 }
