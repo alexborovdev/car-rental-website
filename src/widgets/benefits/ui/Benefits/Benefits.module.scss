@@ -1,0 +1,12 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.list {
+  display: flex;
+  column-gap: fluid(175, 25);
+  padding-block: fluid(60, 40);
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: fluid(50, 35);
+  }
+}

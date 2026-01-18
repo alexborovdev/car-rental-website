@@ -1,12 +1,12 @@
 import Intro from '@/widgets/hero/ui/Intro'
 import CarImage from '@/widgets/hero/ui/CarImage'
 import BookingCard from '@/features/booking'
-import styles from './Hero.module.scss'
+import styles from './HeroSection.module.scss'
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <section
-      className={`container-big ${styles.hero}`}
+      className="container-big"
       aria-labelledby="hero-title"
     >
       <div className={`surface ${styles.wrapper}`}>
@@ -18,4 +18,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroSection

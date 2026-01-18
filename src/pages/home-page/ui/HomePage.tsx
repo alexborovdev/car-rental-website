@@ -1,9 +1,11 @@
-import Hero from '@/widgets/hero'
+import HeroSection from '@/widgets/hero'
+import BenefitsSection from '@/widgets/benefits'
 
 const HomePage = () => {
   return (
     <main>
-      <Hero />
+      <HeroSection />
+      <BenefitsSection />
     </main>
   )
 }
