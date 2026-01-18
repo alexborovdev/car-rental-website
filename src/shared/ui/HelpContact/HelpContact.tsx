@@ -1,17 +1,20 @@
 import { useHelpContactOutsideClick } from '@/shared/ui/HelpContact'
-import { MEDIA_QUERIES, useMediaQuery } from '@/shared/lib/hooks/useMediaQuery'
 import ToggleButton from '@/shared/ui/HelpContact/ToggleButton'
 import ContactPanel from '@/shared/ui/HelpContact/ContactPanel'
 import styles from './HelpContact.module.scss'
 
-const HelpContact = () => {
+type Props = {
+  isTablet: boolean
+}
+
+const HelpContact = (props: Props) => {
+  const { isTablet } = props
+
   const {
     ref,
     isOpen,
     toggle,
   } = useHelpContactOutsideClick()
-
-  const isTablet = useMediaQuery(MEDIA_QUERIES.tablet)
 
   return (
     <address

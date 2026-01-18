@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
-import { MEDIA_QUERIES, useMediaQuery } from '@/shared/lib/hooks/useMediaQuery'
 import LogoIcon from '@/shared/assets/icons/logo.svg?react'
 import LogoIconPartial from '@/shared/assets/icons/logo-partial.svg?react'
 import styles from './Logo.module.scss'
 
-const Logo = () => {
-  const isTablet = useMediaQuery(MEDIA_QUERIES.tablet)
+type Props = {
+  isTablet: boolean
+}
+
+const Logo = (props: Props) => {
+  const { isTablet } = props
 
   return (
     <Link
