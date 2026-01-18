@@ -1,2 +1,6 @@
+export type { Car, City, FormValues } from './model/types'
 export { type CarTypes, type CitiesTypes, CAR_TYPES, CITIES } from './model/constants'
+export { initialValues } from './model/initial-values'
+export { schema } from './model/schema'
+export { useBookingForm } from './model/hooks'
 export { default } from './ui/BookingCard'

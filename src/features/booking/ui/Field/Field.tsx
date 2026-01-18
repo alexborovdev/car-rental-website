@@ -1,3 +1,4 @@
+import { useField } from 'formik'
 import type { HTMLInputTypeAttribute } from 'react'
 import type { CarTypes, CitiesTypes } from '@/features/booking'
 import styles from './Field.module.scss'
@@ -17,18 +18,34 @@ const Field = (props: Props) => {
     entities
   } = props
 
+  const [field, meta] = useField(id)
+
   const isSelect = entities && entities.length > 0
+  const hasError = meta.touched && Boolean(meta.error)
 
   return (
     <div className={styles.field}>
-      <label className={styles.label} htmlFor={id}>
+      <label
+        className={styles.label}
+        htmlFor={id}
+      >
         {label}
       </label>
       {isSelect ? (
-        <select className={styles.select} id={id} name={id}>
-          <option value="" disabled selected>{label}</option>
+        <select
+          className={styles.select}
+          id={id}
+          aria-invalid={hasError}
+          {...field}
+        >
+          <option value="" disabled>
+            {label}
+          </option>
           {entities.map((entity) => (
-            <option key={entity.id} value={entity.id}>
+            <option
+              key={entity.id}
+              value={entity.id}
+            >
               {entity.label}
             </option>
           ))}
@@ -37,9 +54,17 @@ const Field = (props: Props) => {
         <input
           className={styles.input}
           id={id}
-          name={id}
           type={type}
+          min={type === 'date'
+            ? new Date().toISOString().split('T')[0]
+            : undefined}
+          {...field}
         />
+      )}
+      {hasError && (
+        <span className={styles.error}>
+          {String(meta.error)}
+        </span>
       )}
     </div>
   )

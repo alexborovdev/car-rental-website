@@ -1,2 +1,1 @@
-export { type CarTypes, CAR_TYPES } from './carTypes'
-export { type CitiesTypes, CITIES } from './cities'
+export { type CarTypes, type CitiesTypes, CAR_TYPES, CITIES } from './constants'

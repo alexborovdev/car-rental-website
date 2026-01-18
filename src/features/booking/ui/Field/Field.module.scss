@@ -1,6 +1,7 @@
 @use '@/shared/lib/tools/scss' as *;
 
 .field {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -18,4 +19,30 @@
   border: var(--border);
   border-color: transparent;
   border-radius: var(--border-radius-small);
+
+  &[aria-invalid='true'] {
+    border-color: var(--error-color);
+  }
+}
+
+.error {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: fluid(12, 8);
+  color: var(--error-color);
+  white-space: nowrap;
+  pointer-events: none;
+  animation: fadeIn 0.15s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
