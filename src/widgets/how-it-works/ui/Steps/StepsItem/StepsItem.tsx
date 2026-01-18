@@ -17,7 +17,7 @@ const StepsItem = (props: Props) => {
   return (
     <li>
       <div className={styles.wrapper}>
-        <Icon />
+        <Icon aria-hidden="true" />
         <h3 className={styles.title}>{title}</h3>
       </div>
       <p className={styles.description}>{description}</p>
