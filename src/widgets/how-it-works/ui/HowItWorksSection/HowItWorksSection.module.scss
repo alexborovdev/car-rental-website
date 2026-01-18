@@ -1,0 +1,19 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.howItWorks {
+  padding-block: fluid(60, 40);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  column-gap: fluid(110, 30);
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(45);
+  }
+}

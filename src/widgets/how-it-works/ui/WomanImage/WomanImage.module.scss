@@ -1,0 +1,9 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.media {
+  margin: 0;
+}
+
+.image {
+  border-radius: var(--border-radius);
+}

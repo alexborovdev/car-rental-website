@@ -1,9 +1,10 @@
 import Benefits from '@/widgets/benefits/ui/Benefits'
+import styles from './BenefitsSection.module.scss'
 
 const BenefitsSection = () => {
   return (
     <section
-      className="container-big"
+      className={`container-big ${styles.benefits}`}
       aria-labelledby="benefits-title"
     >
       <h2

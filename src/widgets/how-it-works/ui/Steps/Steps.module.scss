@@ -1,0 +1,9 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: rem(30);
+  height: 100%;
+}
