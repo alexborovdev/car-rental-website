@@ -1,0 +1,92 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.factsInNumbers {
+  padding-block: fluid(60, 40);
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(20);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('@/shared/assets/images/backgrounds/tire-track-2.webp');
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: fluid(64, 40);
+}
+
+.title,
+.subtitle {
+  z-index: 100;
+}
+
+.image {
+  user-select: none;
+  position: absolute;
+  top: 5%;
+  width: 800px;
+  height: auto;
+  opacity: 0.15;
+  filter: brightness(0.1);
+  z-index: 0;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+
+  @include laptop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 30px;
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.item {
+  background-color: var(--text-color-light);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  column-gap: rem(15);
+  padding: rem(17.5);
+  min-width: rem(240);
+
+  @include laptop {
+    min-width: fluid(400, 200);
+  }
+
+  @include mobile {
+    min-width: 100%;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.value {
+  font-size: rem(24);
+  font-weight: 700;
+  color: var(--text-color-dark);
+}
+
+.label {
+  color: var(--text-color-grey);
+}

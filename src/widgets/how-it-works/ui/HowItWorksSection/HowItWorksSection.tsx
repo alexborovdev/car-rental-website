@@ -8,13 +8,13 @@ const HowItWorksSection = () => {
       className={`container-small ${styles.howItWorks}`}
       aria-labelledby="how-it-works-title"
     >
+      <h2
+        id="how-it-works-title"
+        className="visually-hidden"
+      >
+        How it Works
+      </h2>
       <div className={styles.inner}>
-        <h2
-          id="how-it-works-title"
-          className="visually-hidden"
-        >
-          How it Works
-        </h2>
         <WomanImage />
         <Steps />
       </div>
