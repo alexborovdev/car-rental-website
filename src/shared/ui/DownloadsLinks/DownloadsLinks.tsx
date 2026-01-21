@@ -1,5 +1,5 @@
-import { downloadLinks } from '@/widgets/app-download'
-import DownloadsLinksItem from '@/widgets/app-download/ui/DownloadsLinks/DownloadsLinksItem'
+import { downloadLinks } from '@/shared/model/download-links'
+import DownloadsLinksItem from '@/shared/ui/DownloadsLinks/DownloadsLinksItem'
 import styles from './DownloadsLinks.module.scss'
 
 const DownloadsLinks = () => {

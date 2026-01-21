@@ -1,6 +1,6 @@
-import { useHelpContactOutsideClick } from '@/shared/ui/HelpContact'
-import ToggleButton from '@/shared/ui/HelpContact/ToggleButton'
-import ContactPanel from '@/shared/ui/HelpContact/ContactPanel'
+import { useHelpContactOutsideClick } from '@/widgets/header'
+import ToggleButton from '@/widgets/header/ui/HelpContact/ToggleButton'
+import ContactPanel from '@/widgets/header/ui/HelpContact/ContactPanel'
 import styles from './HelpContact.module.scss'
 
 type Props = {

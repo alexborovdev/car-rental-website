@@ -1,4 +1,4 @@
-import DownloadsLinks from '@/widgets/app-download/ui/DownloadsLinks'
+import DownloadsLinks from '@/shared/ui/DownloadsLinks'
 import PhonesImage from '@/widgets/app-download/ui/PhonesImage'
 import styles from './AppDownloadSection.module.scss'
 

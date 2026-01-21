@@ -1,4 +1,4 @@
-import type { DownloadLink } from '@/widgets/app-download'
+import type { DownloadLink } from '@/shared/model/download-links'
 
 const DownloadsLinksItem = (props: DownloadLink) => {
   const {
