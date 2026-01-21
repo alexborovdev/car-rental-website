@@ -1,0 +1,7 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.image {
+  @include tablet {
+    display: none;
+  }
+}

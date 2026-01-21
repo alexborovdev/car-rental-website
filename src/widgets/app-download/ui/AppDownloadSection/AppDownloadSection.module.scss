@@ -1,0 +1,23 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.appDownload {
+  padding-block: fluid(60, 40);
+  display: grid;
+  grid-template-columns: auto auto;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: fluid(50, 40);
+}
+
+.description {
+  max-width: rem(530);
+  color: var(--text-color-grey);
+}

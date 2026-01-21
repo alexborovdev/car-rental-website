@@ -1,0 +1,6 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.links {
+  display: flex;
+  column-gap: fluid(40, 30);
+}
