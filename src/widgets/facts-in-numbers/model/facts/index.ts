@@ -1,0 +1,1 @@
+export { type Fact, facts } from './facts'

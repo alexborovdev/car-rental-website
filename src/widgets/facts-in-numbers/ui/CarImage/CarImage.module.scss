@@ -1,0 +1,16 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.image {
+  user-select: none;
+  position: absolute;
+  top: 5%;
+  width: 800px;
+  height: auto;
+  opacity: 0.15;
+  filter: brightness(0.1);
+  z-index: 0;
+
+  @include tablet {
+    display: none;
+  }
+}

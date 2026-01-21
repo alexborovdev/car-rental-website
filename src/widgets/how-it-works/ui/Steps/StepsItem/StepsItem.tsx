@@ -1,13 +1,7 @@
-import type { ComponentType, SVGProps } from 'react'
+import type { Step } from '@/widgets/how-it-works'
 import styles from './StepsItem.module.scss'
 
-type Props = {
-  icon: ComponentType<SVGProps<SVGSVGElement>>
-  title: string
-  description: string
-}
-
-const StepsItem = (props: Props) => {
+const StepsItem = (props: Step) => {
   const {
     icon: Icon,
     title,

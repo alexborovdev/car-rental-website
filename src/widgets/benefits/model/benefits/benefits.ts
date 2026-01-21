@@ -3,15 +3,13 @@ import LocationIcon from '@/shared/assets/icons/benefits/location.svg?react'
 import CarIcon from '@/shared/assets/icons/benefits/car.svg?react'
 import WalletIcon from '@/shared/assets/icons/benefits/wallet.svg?react'
 
-type Benefit = {
+export type Benefit = {
   icon: ComponentType<SVGProps<SVGSVGElement>>
   title: string
   description: string
 }
 
-export type Benefits = Benefit[]
-
-export const benefits: Benefits = [
+export const benefits: Benefit[] = [
   {
     icon: LocationIcon,
     title: 'Availability',

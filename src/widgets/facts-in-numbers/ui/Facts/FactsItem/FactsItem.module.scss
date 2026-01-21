@@ -1,0 +1,34 @@
+@use '@/shared/lib/tools/scss' as *;
+
+.item {
+  background-color: var(--text-color-light);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  column-gap: rem(15);
+  padding: rem(17.5);
+  min-width: rem(240);
+
+  @include laptop {
+    min-width: fluid(400, 200);
+  }
+
+  @include mobile {
+    min-width: 100%;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.value {
+  font-size: rem(24);
+  font-weight: 700;
+  color: var(--text-color-dark);
+}
+
+.label {
+  color: var(--text-color-grey);
+}

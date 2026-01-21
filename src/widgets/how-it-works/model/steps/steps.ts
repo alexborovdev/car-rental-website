@@ -4,15 +4,13 @@ import TwoIcon from '@/shared/assets/icons/steps/2.svg?react'
 import ThreeIcon from '@/shared/assets/icons/steps/3.svg?react'
 import FourIcon from '@/shared/assets/icons/steps/4.svg?react'
 
-type Step = {
+export type Step = {
   icon: ComponentType<SVGProps<SVGSVGElement>>
   title: string
   description: string
 }
 
-export type Steps = Step[]
-
-export const steps: Steps = [
+export const steps: Step[] = [
   {
     icon: OneIcon,
     title: 'Choose your car',

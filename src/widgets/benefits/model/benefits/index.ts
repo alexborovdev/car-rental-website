@@ -1,1 +1,1 @@
-export { type Benefits, benefits } from './benefits'
+export { type Benefit, benefits } from './benefits'

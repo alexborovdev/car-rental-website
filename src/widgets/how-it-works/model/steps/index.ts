@@ -1,1 +1,1 @@
-export { type Steps, steps } from './steps'
+export { type Step, steps } from './steps'

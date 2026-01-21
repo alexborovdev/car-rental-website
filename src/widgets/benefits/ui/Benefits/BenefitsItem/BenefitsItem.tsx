@@ -1,13 +1,7 @@
-import type { ComponentType, SVGProps } from 'react'
+import type { Benefit } from '@/widgets/benefits'
 import styles from './BenefitsItem.module.scss'
 
-type Props = {
-  icon: ComponentType<SVGProps<SVGSVGElement>>
-  title: string
-  description: string
-}
-
-const BenefitsItem = (props: Props) => {
+const BenefitsItem = (props: Benefit) => {
   const {
     icon: Icon,
     title,
