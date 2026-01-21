@@ -9,8 +9,11 @@ const FactsItem = (props: Fact) => {
   } = props
 
   return (
-    <div className={styles.item}>
-      <Icon />
+    <div
+      className={styles.item}
+      role="group"
+    >
+      <Icon aria-hidden="true" />
       <div className={styles.description}>
         <dt className={styles.value}>{value}</dt>
         <dd className={styles.label}>{label}</dd>
