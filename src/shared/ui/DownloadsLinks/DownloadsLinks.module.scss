@@ -4,3 +4,8 @@
   display: flex;
   column-gap: fluid(40, 30);
 }
+
+.column {
+  flex-direction: column;
+  row-gap: fluid(15, 10);
+}

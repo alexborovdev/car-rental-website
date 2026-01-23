@@ -6,24 +6,30 @@
   box-sizing: border-box;
 }
 
-ul, ol {
-  padding-left: 0;
-}
-
 body,
-:where(blockquote, figure):where([class]) {
+blockquote,
+figure {
   margin: 0;
 }
 
-:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl {
   margin-block: 0;
 }
 
-:where(dd[class]) {
+dd {
   margin-left: 0;
 }
 
-:where(fieldset[class]) {
+fieldset {
   margin-left: 0;
   padding: 0;
   border: none;
@@ -31,9 +37,10 @@ body,
 
 ul, ol {
   list-style: none;
+  padding-left: 0;
 }
 
-:where(address[class]) {
+address {
   font-style: normal;
 }
 
@@ -43,7 +50,7 @@ p {
   margin-block: 0;
 }
 
-p:where(:not([class]):not(:last-child)) {
+p {
   margin-bottom: var(--paragraphMarginBottom);
 }
 
@@ -76,7 +83,7 @@ body {
   line-height: 1.5;
 }
 
-a:where([class]) {
+a {
   display: inline-flex;
 }
 
@@ -84,18 +91,6 @@ button,
 label {
   cursor: pointer;
 }
-
-//[fill] {
-//  fill: currentColor;
-//}
-//
-//[stroke] {
-//  stroke: currentColor;
-//}
-
-//svg * {
-//  transition-property: fill, stroke;
-//}
 
 @media (prefers-reduced-motion: reduce) {
   *,

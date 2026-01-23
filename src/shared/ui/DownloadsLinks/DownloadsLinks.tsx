@@ -1,10 +1,24 @@
+import clsx from 'clsx'
 import { downloadLinks } from '@/shared/model/download-links'
 import DownloadsLinksItem from '@/shared/ui/DownloadsLinks/DownloadsLinksItem'
 import styles from './DownloadsLinks.module.scss'
 
-const DownloadsLinks = () => {
+type Props = {
+  isColumn?: boolean
+}
+
+const DownloadsLinks = (props: Props) => {
+  const {
+    isColumn
+  } = props
+
   return (
-    <ul className={styles.links}>
+    <ul
+      className={clsx(
+        styles.links,
+        isColumn && styles.column
+      )}
+    >
       {downloadLinks.map(({ icon, href, label }) => {
         return (
           <DownloadsLinksItem

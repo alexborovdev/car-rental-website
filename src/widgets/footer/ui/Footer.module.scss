@@ -1,1 +1,74 @@
 @use '@/shared/lib/tools/scss' as *;
+
+.footer {
+  padding-block: fluid(60, 40);
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(60, 40);
+}
+
+.topWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsList {
+  display: flex;
+  column-gap: fluid(200, 50);
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.contactsItem {
+  display: flex;
+  align-items: center;
+  column-gap: rem(15);
+}
+
+.contactsItemInner {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+
+  & span {
+    font-weight: 400;
+  }
+}
+
+.bottomWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(30, 20);
+}
+
+.description {
+  max-width: fluid(280, 120);
+}
+
+.socials {
+  display: flex;
+  column-gap: rem(20);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(20);
+}
+
+.navigationList a {
+  font-weight: 400;
+}
+
+.download {
+  @include mobile {
+    display: none;
+  }
+}
